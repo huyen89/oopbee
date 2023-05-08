@@ -6,7 +6,6 @@ import com.example.oopbee.entity.QueenBee;
 import com.example.oopbee.entity.WorkerBee;
 
 import java.util.ArrayList;
-import java.util.Random;
 import java.security.SecureRandom;
 
 /**
