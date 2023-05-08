@@ -7,6 +7,7 @@ public abstract class Bee {
     private String type;
     private int health;
     private boolean alive;
+    private Random rand = new Random();
 
     public Bee() {
         this.health = 100;
@@ -65,7 +66,6 @@ public abstract class Bee {
         if (this.isAlive()) {
 
             // Random 1 -> 100
-            Random rand = new Random();
             int damageAmount = rand.nextInt(100) + 1;
 
             int delta = this.getHealth() - damageAmount;
