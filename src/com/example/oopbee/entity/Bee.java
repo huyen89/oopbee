@@ -1,16 +1,17 @@
 package com.example.oopbee.entity;
 
 import java.util.Random;
-import java
+import java.security.SecureRandom;
+
 
 public abstract class Bee {
 
     private String type;
     private int health;
     private boolean alive;
-    private Random rand = new Random();
+    private SecureRandom rand = new SecureRandom();
 
-    public Bee() {
+    protected Bee() {
         this.health = 100;
         this.alive = true;
     }

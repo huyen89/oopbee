@@ -7,13 +7,14 @@ import com.example.oopbee.entity.WorkerBee;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.security.SecureRandom;
 
 /**
  * Logic class: create bee list, attack bee
  */
 public class BeeHive {
     private ArrayList<Bee> listBee;
-    private Random rand = new Random();
+    private SecureRandom rand = new SecureRandom();
 
     public void init() {
         //create list of 10 bees  of Queen, Drone and Worker types
