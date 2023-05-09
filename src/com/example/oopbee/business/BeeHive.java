@@ -12,7 +12,7 @@ import java.security.SecureRandom;
  * Logic class: create bee list, attack bee
  */
 public class BeeHive {
-    private List<Bee> listBee;
+    private ArrayList<Bee> listBee;
     private SecureRandom rand = new SecureRandom();
 
     public void init() {
@@ -39,7 +39,7 @@ public class BeeHive {
         }
     }
 
-    public List<Bee> getAllBees() {
+    public ArrayList<Bee> getAllBees() {
         return listBee;
     }
 

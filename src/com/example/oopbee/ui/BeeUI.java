@@ -60,7 +60,7 @@ public class BeeUI {
 
     }
 
-    public static void showBees(List<Bee> bees) {
+    public static void showBees(ArrayList<Bee> bees) {
         for (int i = 0; i < bees.size(); i++) {
             //show bee information
             logger.log(bees.get(i));
